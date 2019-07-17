@@ -9780,3 +9780,6 @@ javax.net.ssl.SSLHandshakeException: Remote host closed connection during handsh
 Caused by: java.io.EOFException: SSL peer shut down incorrectly
 	at sun.security.ssl.InputRecord.read(Unknown Source)
 	... 23 more
+
+!ENTRY org.eclipse.jface.text 2 0 2019-07-17 23:53:57.476
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

@@ -10,7 +10,7 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public void delete() {
 		System.out.println("delete");
-		//int a = 1/0;
+//		int a = 1/0;
 	}
 
 	@Override

@@ -1,0 +1,11 @@
+package com.lmj.dao;
+
+import java.util.List;
+
+import com.lmj.bean.User;
+
+public interface UserDao {
+	//查
+	//根据id查找用户
+	User selectUserById(Integer id);
+}

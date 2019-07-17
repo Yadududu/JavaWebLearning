@@ -1,4 +1,4 @@
-java.lang.Exception: No tests found matching [{ExactMatcher:fDisplayName=Test2], {ExactMatcher:fDisplayName=Test2(com.lmj.test.Test_Annotation)], {LeadingIdentifierMatcher:fClassName=com.lmj.test.Test_Annotation,fLeadingIdentifier=Test2]] from org.junit.internal.requests.ClassRequest@5e8c92f4
+java.lang.Exception: No tests found matching [{ExactMatcher:fDisplayName=Test2], {ExactMatcher:fDisplayName=Test2(com.lmj.test.JdbcTest)], {LeadingIdentifierMatcher:fClassName=com.lmj.test.JdbcTest,fLeadingIdentifier=Test2]] from org.junit.internal.requests.ClassRequest@1cf4f579
 	at org.junit.internal.requests.FilterRequest.getRunner(FilterRequest.java:40)
 	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createFilteredTest(JUnit4TestLoader.java:80)
 	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader.createTest(JUnit4TestLoader.java:71)
