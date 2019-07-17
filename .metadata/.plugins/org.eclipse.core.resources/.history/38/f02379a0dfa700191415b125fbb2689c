@@ -1,0 +1,5 @@
+package com.lmj.dao;
+
+public class UserDaoImpl {
+
+}

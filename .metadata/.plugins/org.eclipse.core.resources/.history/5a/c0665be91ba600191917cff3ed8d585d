@@ -1,0 +1,5 @@
+package com.lmj.service;
+
+public interface UserService {
+
+}

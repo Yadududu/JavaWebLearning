@@ -1,0 +1,15 @@
+package com.lmj.test;
+
+import com.lmj.service.UserService;
+import com.lmj.service.UserServiceImpl;
+
+public class AopTest {
+	@Test
+	public void Test1() {
+		UserServiceProxy usProxy = new UserServiceProxy();
+		UserService us = new UserServiceImpl();
+		UserService us_PowerUp = usProxy.getUserServiceProxy(us);
+		
+		us_PowerUp.find();
+	}
+}
