@@ -1,5 +1,7 @@
 package com.lmj.test;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 
 import org.junit.Test;
@@ -13,7 +15,7 @@ import com.lmj.dao.UserDaoImpl;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:applicationContext.xml")
+@ContextConfiguration("classpath:applicationContext2.xml")
 public class JdbcTest {
 	@Test
 	public void Test1() {
@@ -40,5 +42,39 @@ public class JdbcTest {
 		u.setU_username("老王");
 		u.setU_password("666");
 		ud.saveUser(u);
+	}
+	
+	@Test
+	public void Test4() {
+		User u = new User();
+		u.setU_id(5);
+		u.setU_username("老王");
+		u.setU_password("777");
+		ud.updateUser(u);
+	}
+	
+	@Test
+	public void Test5() {
+		User u = ud.selectUserById(5);
+		System.out.println(u);
+	}
+	
+	@Test
+	public void Test6() {
+		List<User> list = ud.selectAllUser();
+		for(User u:list) {
+			System.out.println(u);
+		}
+	}
+	
+	@Test
+	public void Test7() {
+		Integer count = ud.selectUserCount();
+		System.out.println(count);
+	}
+	
+	@Test
+	public void Test8() {
+		ud.deleteUserById(8);
 	}
 }

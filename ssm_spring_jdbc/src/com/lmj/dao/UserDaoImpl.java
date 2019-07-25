@@ -14,7 +14,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 public class UserDaoImpl extends JdbcDaoSupport implements UserDao{
 	
-	JdbcTemplate jt;
+//	JdbcTemplate jt;
 	
 //	private static ComboPooledDataSource dataSource;
 //	JdbcTemplate jt = new JdbcTemplate(dataSource);
@@ -33,14 +33,15 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao{
 //		}
 //	}
 	
+//	public void setJt(JdbcTemplate jt) {
+//		this.jt = jt;
+//	}
+
 	//根据id查询一个用户
 	@Override
 	public User selectUserById(Integer id) {
-		
-		
-		String sql = "select * from user where u id =?";
-		User user = jt.queryForObject(sql, new RowMapper<User>() {
-
+		String sql = "select * from user where u_id =?";
+		User user = getJdbcTemplate().queryForObject(sql, new RowMapper<User>() {
 			@Override
 			public User mapRow(ResultSet rs, int index) throws SQLException {
 				// TODO Auto-generated method stub
@@ -52,7 +53,6 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao{
 			}
 			
 		},id);
-		
 		return user;
 	}
 	
@@ -60,28 +60,28 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao{
 	@Override
 	public void saveUser(User u) {
 		String sql = "insert into user values(null, ?, ?)";
-		jt.update(sql, u.getU_username(), u.getU_password());
+		getJdbcTemplate().update(sql, u.getU_username(), u.getU_password());
 	}
 
 	//根据id删除用户
 	@Override
 	public void deleteUserById(Integer id) {
 		String sql = "delete from user where u_id = ?";
-		jt.update(sql, id);
+		getJdbcTemplate().update(sql, id);
 	}
 
 	//更新用户
 	@Override
 	public void updateUser(User u) {
 		String sql = "update user set u_username = ? , u_password = ? where u_id = ?";
-		jt.update(sql, u.getU_username(), u.getU_password(), u.getU_id());	
+		getJdbcTemplate().update(sql, u.getU_username(), u.getU_password(), u.getU_id());	
 	}
 
 	//查询用户列表
 	@Override
 	public List<User> selectAllUser() {
 		String sql = "select * from user";
-		List<User> list = jt.query(sql, new RowMapper<User>() {
+		List<User> list = getJdbcTemplate().query(sql, new RowMapper<User>() {
 			@Override
 			public User mapRow(ResultSet rs, int index) throws SQLException {
 				User u = new User();
@@ -98,6 +98,6 @@ public class UserDaoImpl extends JdbcDaoSupport implements UserDao{
 	@Override
 	public Integer selectUserCount() {
 		String sql = "select count(*) from user";
-		return jt.queryForObject(sql, Integer.class);
+		return getJdbcTemplate().queryForObject(sql, Integer.class);
 	}
 }

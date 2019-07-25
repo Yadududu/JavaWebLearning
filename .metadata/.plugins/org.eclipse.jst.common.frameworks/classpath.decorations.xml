@@ -4,4 +4,9 @@
       <source-attachment-path>D:/BaiduNetdiskDownload/siki/Siki学院_SSM框架Spring资料与源码/02_jar/spring_Jar/spring-framework-5.0.8.RELEASE-dist/spring-framework-5.0.8.RELEASE/libs/spring-web-5.0.8.RELEASE-sources.jar</source-attachment-path>
     </entry>
   </container>
+  <container id="ssm_spring_jdbc!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Projects/EclipseProjects/JspTest/ssm_spring_jdbc/WebContent/WEB-INF/lib/spring-jdbc-5.0.8.RELEASE.jar">
+      <source-attachment-path>D:/BaiduNetdiskDownload/siki/Siki学院_SSM框架Spring资料与源码/02_jar/spring_Jar/spring-framework-5.0.8.RELEASE-dist/spring-framework-5.0.8.RELEASE/libs/spring-jdbc-5.0.8.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
 </classpath>

@@ -12,7 +12,7 @@ import com.lmj.service.UserServiceImpl;
  */
 public class UserServiceProxy {
 	//UserServiceProxy	代理类
-	//UserService		被代理类
+	//UserServiceImpl	被代理类
 	public UserService getUserServiceProxy(UserService us) {
 		
 		return (UserService) Proxy.newProxyInstance(UserServiceProxy.class.getClassLoader(), 

@@ -1,9 +1,0 @@
-package com.lmj.test;
-
-public class AopTest {
-	public void Test1() {
-		UserServiceProxy usProxy = new UserServiceProxy();
-		UserService us = new UserService()
-		UserService us_PowerUp = usProxy.getUserServiceProxy(us);
-	}
-}
