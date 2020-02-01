@@ -2,27 +2,27 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="sqlSessionFactory" key="selection"/>
+		<item value="jackson" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Jackson"/>
+			<item value="jsckson"/>
+			<item value="jdbc"/>
+			<item value="aspectj"/>
+			<item value="org.aspectj"/>
+			<item value="ojdbc7"/>
+			<item value="resultType"/>
+			<item value="contextConfigLocation"/>
+			<item value="UserMapper"/>
 			<item value="sqlSessionFactory"/>
 			<item value="getSqlSession"/>
 			<item value="getBean"/>
 			<item value="sqlSessionFactoryBean"/>
 			<item value="configLocation"/>
 			<item value="dataSource"/>
-			<item value="jt"/>
-			<item value="getjdbc"/>
-			<item value="contextloader"/>
-			<item value="selectAll"/>
-			<item value="selectAllUserVo"/>
-			<item value=" selectAllUserVo"/>
-			<item value="BaseResultMap"/>
-			<item value="selectByPrimaryKey"/>
-			<item value="selectUserByV"/>
 		</list>
 		<list key="replacehistory">
 			<item value="getJdbcTemplate()"/>
@@ -35,7 +35,7 @@
 		<item value="300" key="DIALOG_WIDTH"/>
 		<item value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
 		<item value="410" key="DIALOG_HEIGHT"/>
-		<item value="633" key="DIALOG_X_ORIGIN"/>
-		<item value="424" key="DIALOG_Y_ORIGIN"/>
+		<item value="145" key="DIALOG_X_ORIGIN"/>
+		<item value="453" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

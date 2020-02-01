@@ -13,34 +13,34 @@ import org.springframework.stereotype.Service;
 //<bean name="user" class="com.lmj.bean.User">
 @Component("user")
 
-//@Controller()		//¶ÔÓ¦web²ã
-//@Service("user")	//¶ÔÓ¦service
-//@Repository()		//¶ÔÓ¦dao²ã
+//@Controller()		//å¯¹åº”webå±‚
+//@Service("user")	//å¯¹åº”service
+//@Repository()		//å¯¹åº”daoå±‚
 //@Scope(scopeName="prototype")
 public class User2 {
 	
-	@Value(value="1")	//Ê¹ÓÃ±©Á¦·´ÉäÈ¥×¢ÈëµÄ
+	@Value(value="1")	//ä½¿ç”¨æš´åŠ›åå°„å»æ³¨å…¥çš„
 	private Integer u_id;	
 	private String u_username;
 	private String u_password;
 	
-	//¼ÓÈë³èÎï×Ö¶Î
+	//åŠ å…¥å® ç‰©å­—æ®µ
 	private Pet u_pet;
 	
 	public Pet getU_pet() {
 		return u_pet;
 	}
 
-	//×Ô¶¯×°Åä
+	//è‡ªåŠ¨è£…é…
 //	@Autowired
-	//ÊÖ¶¯Ö¸¶¨
+	//æ‰‹åŠ¨æŒ‡å®š
 	@Resource(name="dog")
 	public void setU_pet(Pet u_pet) {
 		this.u_pet = u_pet;
 	}
 
 	public User2() {
-		System.out.println("User2 ¶ÔÏó¿Õ²Î¹¹Ôì·½·¨");
+		System.out.println("User2 å¯¹è±¡ç©ºå‚æ„é€ æ–¹æ³•");
 	}
 	
 	public Integer getU_id() {
@@ -53,7 +53,7 @@ public class User2 {
 		return u_username;
 	}
 	
-	@Value("ÀÏÍõ")	//ÍÆ¼öÔÚset·½·¨ÉÏ×¢Èë
+	@Value("è€ç‹")	//æ¨èåœ¨setæ–¹æ³•ä¸Šæ³¨å…¥
 	public void setU_username(String u_username) {
 		this.u_username = u_username;
 	}
@@ -64,13 +64,13 @@ public class User2 {
 		this.u_password = u_password;
 	}
 	
-	//ÔÚ¹¹Ôì·½·¨ºóµ÷ÓÃ
+	//åœ¨æ„é€ æ–¹æ³•åè°ƒç”¨
 	@PostConstruct()
 	public void userInit() {
 		System.out.println("user init ");
 	}
 		
-	//ÔÚÏú»Ù·½·¨Ç°µ÷ÓÃ
+	//åœ¨é”€æ¯æ–¹æ³•å‰è°ƒç”¨
 	@PreDestroy()
 	public void userDestroy() {
 		System.out.println("user destroy");

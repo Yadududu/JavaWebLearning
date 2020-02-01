@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=TestMybatis/src&lt;com.lmj.dao{UserDao.java[UserDao" modifiers="513" timestamp="1562079982073"/>
 <typeInfo handle="=ssm_spring_aop/src&lt;com.lmj.service{UserServiceImpl.java[UserServiceImpl" modifiers="1" timestamp="1563376363988"/>
-<typeInfo handle="=ssm_spring_transaction/src&lt;com.lmj.service{AccountService.java[AccountService" modifiers="513" timestamp="1563606164438"/>
-<typeInfo handle="=ssm_spring_transaction/src&lt;com.lmj.dao{AccountDao.java[AccountDao" modifiers="513" timestamp="1563606756861"/>
+<typeInfo handle="=ssm_spring_mybatis_tx/src&lt;com.lmj.service{AccountService.java[AccountService" modifiers="513" timestamp="1564299023946"/>
+<typeInfo handle="=Maven-SSM/src\/main\/java&lt;com.lmj.service{ItemService.java[ItemService" modifiers="513" timestamp="1567000800341"/>
+<typeInfo handle="=Maven-SSM/C:\/Program Files\/Java\/jre1.8.0_181\/lib\/rt.jar&lt;java.awt.event(ItemListener.class[ItemListener" modifiers="1537" timestamp="1535876841624"/>
 </typeInfoHistroy>
