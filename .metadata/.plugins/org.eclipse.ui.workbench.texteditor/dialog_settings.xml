@@ -2,12 +2,17 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="jackson" key="selection"/>
+		<item value="sqlSessionFactoryBean" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="sqlSessionFactoryBean"/>
+			<item value="sqlSessionFactory"/>
+			<item value="selectAll"/>
+			<item value="bean"/>
+			<item value="JavaBean"/>
 			<item value="Jackson"/>
 			<item value="jsckson"/>
 			<item value="jdbc"/>
@@ -17,12 +22,7 @@
 			<item value="resultType"/>
 			<item value="contextConfigLocation"/>
 			<item value="UserMapper"/>
-			<item value="sqlSessionFactory"/>
 			<item value="getSqlSession"/>
-			<item value="getBean"/>
-			<item value="sqlSessionFactoryBean"/>
-			<item value="configLocation"/>
-			<item value="dataSource"/>
 		</list>
 		<list key="replacehistory">
 			<item value="getJdbcTemplate()"/>

@@ -1,4 +1,9 @@
 <classpath>
+  <container id="ssh_StrutsForum!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="D:/Projects/EclipseProjects/JspTest/ssh_StrutsForum/WebContent/WEB-INF/lib/struts2-core-2.5.16.jar">
+      <source-attachment-path>D:/BaiduNetdiskDownload/siki/Siki学院_SSH框架第一季 - Struts入门/资料/Jar/struts-2.5.16-src.zip</source-attachment-path>
+    </entry>
+  </container>
   <container id="ssm_spring_servlet!org.eclipse.jst.j2ee.internal.web.container">
     <entry id="D:/Projects/EclipseProjects/JspTest/ssm_spring_servlet/WebContent/WEB-INF/lib/spring-web-5.0.8.RELEASE.jar">
       <source-attachment-path>D:/BaiduNetdiskDownload/siki/Siki学院_SSM框架Spring资料与源码/02_jar/spring_Jar/spring-framework-5.0.8.RELEASE-dist/spring-framework-5.0.8.RELEASE/libs/spring-web-5.0.8.RELEASE-sources.jar</source-attachment-path>

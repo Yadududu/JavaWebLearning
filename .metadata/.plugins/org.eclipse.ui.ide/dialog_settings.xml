@@ -5,6 +5,11 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\BaiduNetdiskDownload\siki\JavaWeb第二季进阶\资料\Web工程源码"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_StrutsForum"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_ForumProject"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_Forum"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\Forum"/>
 			<item value="D:\Projects\EclipseProjects\JspTest\ssm_spring_transaction"/>
 			<item value="D:\Projects\EclipseProjects\JspTest\ssm_mybatis_generator"/>
 			<item value="D:\Projects\EclipseProjects\JspTest\ssm_TestJDBC"/>
