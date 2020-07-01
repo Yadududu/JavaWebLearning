@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- 依赖关系 dao -> dataSource -->
+	<!-- 读取配置文件 -->
+	<context:property-placeholder location="db.properties"/>
+	
+	<!-- 配置 dataSource -->
+	<bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"/>
+		<property name="jdbcUrl" value="${jdbc.url}"/>
+		<property name="user" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+	<!-- dao -->
+	<bean name="accountDao" class="com.lmj.dao.AccountDaoImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- service -->
+	<bean name="accountService" class="com.lmj.service.AccountServiceImpl">
+		<property name="ad"  ref="accountDao"/>
+	</bean>
+	
+	<!-- 配置事务核心管理器 不同平台不一样 -->
+	<bean name = "transactionManager" class = "org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
+	<!-- 事务通知 -->
+	<tx:advice id="txAdivce" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="transferAccounts" isolation="DEFAULT" propagation="REQUIRED" read-only="false"/>
+			<tx:method name="save*" isolation="DEFAULT"  propagation="REQUIRED" read-only="false"/>
+			<tx:method name="delete*" isolation="DEFAULT"  propagation="REQUIRED" read-only="false"/>
+			<tx:method name="update*" isolation="DEFAULT"  propagation="REQUIRED" read-only="false"/>
+			<tx:method name="select*" isolation="DEFAULT"  propagation="REQUIRED" read-only="true"/>
+		</tx:attributes>	
+	</tx:advice>
+	
+	<!-- 配置aop -->
+	<aop:config>
+		<aop:pointcut expression="execution(* com.lmj.service.*ServiceImpl.*(..))" id="txPc"/>
+		<aop:advisor advice-ref="txAdivce" pointcut-ref="txPc"/>
+	</aop:config>
+</beans>
