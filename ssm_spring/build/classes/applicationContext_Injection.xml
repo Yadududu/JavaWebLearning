@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns="http://www.springframework.org/schema/beans" 
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+<!-- 将user对象交给spring管理，并注入值类型 -->
+<bean name="user" class="com.lmj.bean.User">
+	<property name="u_id" value="1"/>
+	<property name="u_username" value="老王"/>
+	<property name="u_password" value="123"/>
+	<!-- 引用类型注入 -->
+	<property name="u_pet" ref="dog"/>
+</bean>
+
+<!-- 将pet对象交给spring容器管理 -->
+<bean name="dog" class="com.lmj.bean.Pet">
+	<property name="petType" value="二哈"/>
+	<property name="color" value="灰白"/>
+</bean>
+
+
+<!-- 构造方法注入 -->
+<bean name="user1" class="com.lmj.bean.User">
+<!-- name 调用构造方法的参数名称 value 是注入值类型 ref 注入引用类型 -->
+<!-- type 是指定参数的类型 -->
+<!-- index 是指定参数的位置 -->
+	<constructor-arg name="u_username" value="66" type="java.lang.Integer" index="1"/>
+	<constructor-arg name="u_pet" ref="dog"/>
+</bean>
+
+<!-- 复杂类型注入 -->
+<bean name="collection" class="com.lmj.bean.MyCollection">
+ 	<!-- array -->
+ 	<property name="array" value="123" />
+ 	
+ <!--<property name="array">
+ 		<array>
+ 			<value>123</value>
+ 			<value>abc</value>
+ 			<ref bean="dog"/>
+ 		</array>
+ 	</property> -->
+ 	
+ 	<!-- list -->
+ 	<property name="list">
+ 		<list>
+ 			<value>456</value>
+ 			<value>cba</value>
+ 			<ref bean="user1"/>
+ 		</list>
+ 	</property>
+ 	
+ 	<!--set -->
+ 	<property name="set">
+ 		<set>
+ 			<value>111</value>
+ 			<value>aaa</value>
+ 			<ref bean="user1"/>
+ 		</set>
+ 	</property>
+ 	
+	<!-- map -->
+	<property name="map">
+		<map>
+			<entry key="username" value="root"/>
+			<entry key="password" value="123"/>
+			<entry key-ref="user1" value-ref="dog"/>
+		</map>
+	</property>
+	
+	<!-- properties -->
+	<property name="prop">
+		<props>
+			<prop key="name">老李</prop>
+			<prop key="age">25</prop>
+		</props>
+	</property>
+ 	
+ </bean>
+
+</beans>
