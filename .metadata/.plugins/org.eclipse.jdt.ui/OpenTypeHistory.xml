@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=TestMybatis/src&lt;com.lmj.dao{UserDao.java[UserDao" modifiers="513" timestamp="1562079982073"/>
-<typeInfo handle="=ssm_spring_aop/src&lt;com.lmj.service{UserServiceImpl.java[UserServiceImpl" modifiers="1" timestamp="1563290819045"/>
+<typeInfo handle="=ssm_spring_aop/src&lt;com.lmj.service{UserServiceImpl.java[UserServiceImpl" modifiers="1" timestamp="1563376363988"/>
+<typeInfo handle="=ssm_spring_mybatis_tx/src&lt;com.lmj.service{AccountService.java[AccountService" modifiers="513" timestamp="1564299023946"/>
+<typeInfo handle="=Maven-SSM/src\/main\/java&lt;com.lmj.service{ItemService.java[ItemService" modifiers="513" timestamp="1567000800341"/>
 </typeInfoHistroy>

@@ -1,5 +1,0 @@
-package com.lmj.dao;
-
-public interface UserDao {
-
-}

@@ -5,6 +5,16 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\BaiduNetdiskDownload\siki\JavaWeb第二季进阶\资料\Web工程源码"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_StrutsForum"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_ForumProject"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssh_Forum"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\Forum"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssm_spring_transaction"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssm_mybatis_generator"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssm_TestJDBC"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssm_TestMybatis"/>
+			<item value="D:\Projects\EclipseProjects\JspTest\ssm_TestMybatis2"/>
 			<item value="D:\Projects\EclipseProjects\JspTest\Myweb01"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
@@ -12,9 +22,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.m2e.core.wizards.Maven2ModuleWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.m2e"/>
 		</list>
 	</section>
 </section>

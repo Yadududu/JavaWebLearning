@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	
+	
+	<package name="fourm" namespace="/" extends="struts-default">
+		<!-- 配置拦截器 --> 
+		<interceptors>
+			<!-- 注册拦截器 -->
+			<interceptor name="UserIntercept" class="com.sikiedu.web.intercept.UserIntercept"></interceptor>
+			<!-- 注册拦截器栈 -->
+			<interceptor-stack name="myStack">
+				<!-- 引入自己的拦截器 -->
+				<interceptor-ref name="UserIntercept">
+					<param name="excludeMethods">login</param>
+				</interceptor-ref>
+				<!-- 引入struts自带的拦截器 -->
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<!-- 指定默认拦截器栈 -->
+		<default-interceptor-ref name="myStack"></default-interceptor-ref>
+		
+		<!-- 配置全局结果集 -->
+		<global-results>
+			<!-- 重定向 -->
+			<result name="toLogin" type="redirect">/login.jsp</result>
+		</global-results>
+		
+		<global-allowed-methods>regex:.*</global-allowed-methods>
+		<action name="UserAction_*" class="com.sikiedu.web.UserAction" method="{1}">
+			<!-- 转发到Action -->
+			<!-- <result name="getAllPaste" type="chain">PasteAction_getAllPaste</result> -->
+			<!-- 重定向到Action -->
+			<result name="getAllPaste" type="redirectAction">PasteAction_getAllPaste</result>
+			<!-- 转发 -->
+			<result name="login">/login.jsp</result>
+		</action>
+		
+		<action name="PasteAction_*" class="com.sikiedu.web.PasteAction" method="{1}">
+			<result name="index">/index.jsp</result>
+		</action>
+	</package>
+
+
+</struts>

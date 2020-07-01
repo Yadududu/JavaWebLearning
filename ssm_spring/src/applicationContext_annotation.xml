@@ -15,6 +15,6 @@
  	<bean name="dog" class="com.lmj.bean.Pet">
 		<property name="petType" value="二哈"/>
 		<property name="color" value="灰白"/>
-	</bean>  
+	</bean>
 	
 </beans>

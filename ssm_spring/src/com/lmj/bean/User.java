@@ -6,24 +6,24 @@ public class User {
 	private String u_password;
 	
 	public User(String u_username, Pet u_pet) {
-		System.out.println("·½·¨1 String, Pet");
+		System.out.println("æ–¹æ³•1 String, Pet");
 		this.u_username = u_username;
 		this.u_pet = u_pet;
 	}
 	
 	public User(Integer u_username, Pet u_pet) {
-		System.out.println("·½·¨2 Integer, Pet");
+		System.out.println("æ–¹æ³•2 Integer, Pet");
 		this.u_username = u_username.toString();
 		this.u_pet = u_pet;
 	}
 	
 	public User(Pet u_pet, Integer u_username) {
-		System.out.println("·½·¨3 Pet, Integer ");
+		System.out.println("æ–¹æ³•3 Pet, Integer ");
 		this.u_username = u_username.toString();
 		this.u_pet = u_pet;
 	}
 	
-	//¼ÓÈë³èÎï×Ö¶Î
+	//åŠ å…¥å® ç‰©å­—æ®µ
 	private Pet u_pet;
 	
 	public Pet getU_pet() {
@@ -35,7 +35,7 @@ public class User {
 	}
 
 	public User() {
-		System.out.println("User ¶ÔÏó¿Õ²Î¹¹Ôì·½·¨");
+		System.out.println("User å¯¹è±¡ç©ºå‚æ„é€ æ–¹æ³•");
 	}
 	
 	public Integer getU_id() {

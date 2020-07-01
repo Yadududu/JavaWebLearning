@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="maven_ssm_service"/>
+<aop-project name="maven_ssm_mapper"/>
+<aop-project name="maven_ssm_controller"/>
+<aop-project name="maven_ssm_bean"/>
+<aop-project name="Maven-SSM"/>
+</aop-reference-model>

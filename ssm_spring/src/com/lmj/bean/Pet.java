@@ -5,22 +5,22 @@ import org.springframework.stereotype.Component;
 
 @Component("cat")
 public class Pet {
-	//³èÎïÀàĞÍ Ã¨ ¹·
+	//å® ç‰©ç±»å‹ çŒ« ç‹—
 	private String petType;
-	//³èÎïµÄÑÕÉ«
+	//å® ç‰©çš„é¢œè‰²
 	private String color;
 	
 	public String getPetType() {
 		return petType;
 	}
-	@Value("¼Ó·ÆÃ¨")
+	@Value("åŠ è²çŒ«")
 	public void setPetType(String petType) {
 		this.petType = petType;
 	}
 	public String getColor() {
 		return color;
 	}
-	@Value("¿§·ÈÉ«")
+	@Value("å’–å•¡è‰²")
 	public void setColor(String color) {
 		this.color = color;
 	}
