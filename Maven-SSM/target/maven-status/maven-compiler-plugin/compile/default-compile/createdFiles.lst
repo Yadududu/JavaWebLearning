@@ -1,6 +1,0 @@
-com\lmj\bean\ItemInfo.class
-com\lmj\bean\User.class
-com\lmj\service\ItemService.class
-com\lmj\service\ItemServiceImpl.class
-com\lmj\controller\UserController.class
-com\lmj\Mapper\ItemMapper.class
