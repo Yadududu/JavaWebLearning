@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context 
-	http://www.springframework.org/schema/context/spring-context-4.3.xsd ">
+	http://www.springframework.org/schema/context/spring-context.xsd ">
 
 	<!-- 注解开发 -->
 	<!-- 开启组件扫描 base-package 扫描该包下以及子包的所有注解   -->

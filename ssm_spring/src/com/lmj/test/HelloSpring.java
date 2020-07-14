@@ -8,7 +8,7 @@ import com.lmj.bean.User;
 
 public class HelloSpring {
 	
-	//ÔÚÖ®Ç°ÏîÄ¿¿ªÖĞ new ¶ÔÏóÊÇÎÒÃÇ×Ô¼º×öµÄ
+	//åœ¨ä¹‹å‰é¡¹ç›®å¼€ä¸­ new å¯¹è±¡æ˜¯æˆ‘ä»¬è‡ªå·±åšçš„
 	@Test
 	public void Test1() {
 		User u = new User();
@@ -16,20 +16,20 @@ public class HelloSpring {
 		System.out.println(u);
 	}
 	
-	//IOCµÄ·´×ª£º´´½¨¶ÔÏóÕâ·İ¹¤×÷ÓÉÎÒÃÇ×Ô¼ºÖ´ĞĞ·´×ª¸øspring°ïÎÒÃÇÖ´ĞĞ£»
-	//IOCµÄ¿ØÖÆ£º¾ÍÊÇÓÉspring°ïÎÒÃÇ¸ºÔğ´´½¨Ïú»Ù¶ÔÏó£¬ÕÆ¿Ø¶ÔÏóµÄÉúÃüÖÜÆÚµÈ£¬ÎÒÃÇÔÚĞèÒªÊ¹ÓÃ¶ÔÏóµÄÊ±ºò¸úSpringÉêÇë¼´¿É£»
-	//IOCÊÇÒ»ÖÖ±à³ÌË¼Ïë£¬Ò²ÊÇÒ»ÖÖĞÂµÄÉè¼ÆÄ£Ê½£¬ËüĞèÒªDI£¨ÒÀÀµ×¢Èë£©¼¼ÊõµÄÖ§³Ö£»
+	//IOCçš„åè½¬ï¼šåˆ›å»ºå¯¹è±¡è¿™ä»½å·¥ä½œç”±æˆ‘ä»¬è‡ªå·±æ‰§è¡Œåè½¬ç»™springå¸®æˆ‘ä»¬æ‰§è¡Œï¼›
+	//IOCçš„æ§åˆ¶ï¼šå°±æ˜¯ç”±springå¸®æˆ‘ä»¬è´Ÿè´£åˆ›å»ºé”€æ¯å¯¹è±¡ï¼ŒæŒæ§å¯¹è±¡çš„ç”Ÿå‘½å‘¨æœŸç­‰ï¼Œæˆ‘ä»¬åœ¨éœ€è¦ä½¿ç”¨å¯¹è±¡çš„æ—¶å€™è·ŸSpringç”³è¯·å³å¯ï¼›
+	//IOCæ˜¯ä¸€ç§ç¼–ç¨‹æ€æƒ³ï¼Œä¹Ÿæ˜¯ä¸€ç§æ–°çš„è®¾è®¡æ¨¡å¼ï¼Œå®ƒéœ€è¦DIï¼ˆä¾èµ–æ³¨å…¥ï¼‰æŠ€æœ¯çš„æ”¯æŒï¼›
 	
-	//springÊÇÒ»¸öÈİÆ÷£¬Ëü½«°ïÎÒÃÇ¹ÜÀí¶ÔÏó
+	//springæ˜¯ä¸€ä¸ªå®¹å™¨ï¼Œå®ƒå°†å¸®æˆ‘ä»¬ç®¡ç†å¯¹è±¡
 	@Test
 	public void Test2() {
-		//¸ù¾İspringÅäÖÃÎÄ¼ş»ñÈ¡ÈİÆ÷¶ÔÏó
-		//ApplicationContext ÅäÖÃµÄËùÓĞbean¶¼»áÔÚÈİÆ÷´´½¨µÄÊ±ºò±»´´½¨³öÀ´
-		//Èç¹ûÅäÖÃµÄbean½Ï¶à£¬ÄÇÃ´ÔÚ´´½¨ÈİÆ÷µÄÊ±ºò£¬»á²úÉúÄÚ´æ¹ı´óµÄÎÊÌâ£»ÕâÖÖÇé¿öÔÚ»úÆ÷Ó²¼şĞÔÄÜ½ÏÎªÂäºóµÄÊ±ºòÌåÏÖµÄ±È½ÏÃ÷ÏÔ£»
-		//ÑÓ³Ù¼ÓÔØ lazy-init="true"¾ÍÊÇ´´½¨ÈİÆ÷Ê±²»¼ÓÔØÅäÖÃµÄbean¶ÔÏó£¬ÔÚ»ñÈ¡µÄÊ±ºò²Å´´½¨£»
+		//æ ¹æ®springé…ç½®æ–‡ä»¶è·å–å®¹å™¨å¯¹è±¡
+		//ApplicationContext é…ç½®çš„æ‰€æœ‰beanéƒ½ä¼šåœ¨å®¹å™¨åˆ›å»ºçš„æ—¶å€™è¢«åˆ›å»ºå‡ºæ¥
+		//å¦‚æœé…ç½®çš„beanè¾ƒå¤šï¼Œé‚£ä¹ˆåœ¨åˆ›å»ºå®¹çš„æ—¶å€™ï¼Œä¼šäº§ç”Ÿå†…å­˜è¿‡å¤§çš„é—®é¢˜ï¼›è¿™ç§æƒ…å†µåœ¨æœºå™¨ç¡¬ä»¶æ€§èƒ½è¾ƒä¸ºè½åçš„æ—¶å€™ä½“ç°çš„æ¯”è¾ƒæ˜æ˜¾ï¼›
+		//å»¶è¿ŸåŠ è½½ trueå°±æ˜¯åˆ›å»ºå®¹å™¨æ—¶ä¸åŠ è½½é…ç½®çš„beanå¯¹è±¡ï¼Œåœ¨è·å–çš„æ—¶å€™æ‰åˆ›å»ºï¼›
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		//User u = (User) ac.getBean("user");
-		//Í¨¹ıgetBean»ñÈ¡ÅäÖÃºÃµÄuser¶ÔÏó£¨³ÌĞòÔ±ÏòspringÈİÆ÷Òª¶ÔÏó£©
+		//é€šè¿‡getBeanè·å–é…ç½®å¥½çš„userå¯¹è±¡ï¼ˆç¨‹åºå‘˜å‘springå®¹å™¨è¦å¯¹è±¡ï¼‰
 		User u = ac.getBean(User.class);
 		System.out.println(u);
 	}
@@ -38,7 +38,7 @@ public class HelloSpring {
 	public void Test3() {
 		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		//scope="singleton" Ä¬ÈÏÖµ µ¥ÀıµÄ Ö»´´½¨Ò»¸ö¶ÔÏó Ò»°ãÏîÄ¿ÖĞ²ÉÓÃsingleton
+		//scope="singleton" Ä¬ï¿½ï¿½Öµ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ö»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ò»ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ğ²ï¿½ï¿½ï¿½singleton
 		User u1 = ac.getBean(User.class);
 		User u2 = ac.getBean(User.class);
 		User u3 = ac.getBean(User.class);
@@ -51,14 +51,14 @@ public class HelloSpring {
 	public void Test4() {
 		ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		// scope="prototype" ¶àÀıµÄ ÔÚ»ñÈ¡µÄÊ±ºò»á´´½¨ĞÂµÄ¶ÔÏó µ«ÊÇÌØÊâ»·¾³ÏÂĞèÒª¸ÄÎªprototype
+		// scope="prototype" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ú»ï¿½È¡ï¿½ï¿½Ê±ï¿½ï¿½á´´ï¿½ï¿½ï¿½ÂµÄ¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â»·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Îªprototype
 		User u1 = ac.getBean(User.class);
 		User u2 = ac.getBean(User.class);
 		User u3 = ac.getBean(User.class);
 	
 		System.out.println(u1 == u2);
 		
-		//¹Ø±ÕÈİÆ÷¶ÔÏó£¬¾Í»á´¥·¢beanµÄdestroymethod
+		//ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¾Í»á´¥ï¿½ï¿½beanï¿½ï¿½destroymethod
 		ac.close();
 	}
 }

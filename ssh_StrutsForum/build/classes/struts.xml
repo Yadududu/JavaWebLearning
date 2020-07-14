@@ -32,6 +32,7 @@
 		</global-results>
 		
 		<global-allowed-methods>regex:.*</global-allowed-methods>
+		
 		<!-- action:配置action类
 			name:决定了action访问的资源名称   servlet:url-pattern 
 			class:action的完整类名
@@ -44,6 +45,7 @@
 		</action>
 		<action name = "LoginActionDefault" class="com.sikiedu.web.DefaultAction" method="execute"></action>
 		
+		<!-- 动态方法 -->
 		<action name="LoginActionImpl_*" class = "com.sikiedu.web.ImplAction" method="{1}">
 			<!-- 转发到LoginActionDefault -->
 			<result name="defaultAction" type="chain">LoginActionDefault</result>
