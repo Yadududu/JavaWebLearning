@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 		xmlns="http://www.springframework.org/schema/beans" 
-		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd ">
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+							http://www.springframework.org/schema/beans/spring-beans-4.3.xsd ">
 
 	<!-- name 是起一个名字，我们可以通过这个name来利用容器获取对象 
 		   name 可以使用特殊字符
