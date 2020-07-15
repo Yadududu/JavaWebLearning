@@ -44,5 +44,6 @@ gen/
 .classpath
 .project
 .DS_Store
-/.metadata/
+.metadata/
 .recommenders/
+/build/
