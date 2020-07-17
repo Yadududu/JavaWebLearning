@@ -38,6 +38,7 @@ buildNumber.properties
  
 # generated files
 bin/
+build/
 gen/
  
 # Eclipse project files
@@ -46,5 +47,9 @@ gen/
 .DS_Store
 .metadata/
 .recommenders/
-build/
 Servers/
+
+# Idea project files
+*.iml
+.idea/
+out/
