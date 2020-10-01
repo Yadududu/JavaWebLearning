@@ -17,7 +17,7 @@ import java.util.UUID;
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
+	
     /**
      * 跨服务器文件上传
      * @return
@@ -27,7 +27,7 @@ public class UserController {
         System.out.println("跨服务器文件上传...");
 
         // 定义上传文件服务器路径
-        String path = "http://localhost:9090/uploads/";
+        String path = "http://localhost:8090/ssm_springmvc_day02_04_interceptor/uploads/";
 
         // 说明上传文件项
         // 获取上传文件的名称
@@ -110,6 +110,13 @@ public class UserController {
                 // 说明上传文件项
                 // 获取上传文件的名称
                 String filename = item.getName();
+                // 有的浏览器bai会返回文件名，而有的du浏览器会返回“路径”+“文件名”，zhi针对后者我们需要dao通过“字符串截取”获取文件名
+                int index=filename.lastIndexOf("\\");
+                if(index!=-1) {
+                	filename=filename.substring(index+1);
+                }
+                
+                System.out.println(item.getName());
                 // 把文件的名称设置唯一值，uuid
                 String uuid = UUID.randomUUID().toString().replace("-", "");
                 filename = uuid+"_"+filename;

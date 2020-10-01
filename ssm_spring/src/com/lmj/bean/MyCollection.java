@@ -7,7 +7,7 @@ import java.util.Properties;
 import java.util.Set;
 
 public class MyCollection {
-	//Êý×é
+	//æ•°ç»„
 	private Object[] array;
 	//list
 	private List list;

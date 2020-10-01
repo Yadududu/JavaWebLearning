@@ -10,8 +10,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.lmj.bean.Pet;
 
 
-@RunWith(SpringJUnit4ClassRunner.class)//使用junit进行测试，帮我们创建容器
-@ContextConfiguration("classpath:applicationContext.xml") //读取配置文件
+@RunWith(SpringJUnit4ClassRunner.class)//浣跨敤junit杩涜娴嬭瘯锛屽府鎴戜滑鍒涘缓瀹瑰櫒
+@ContextConfiguration("classpath:applicationContext.xml") //璇诲彇閰嶇疆鏂囦欢
 public class test_JUnit {
 	
 	@Resource(name="dog")
